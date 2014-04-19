@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Sastrawi\Dictionary\ArrayDictionary</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?2342264317"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.html">Sastrawi<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Sastrawi.Dictionary.html">Dictionary</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Morphology.html">Morphology<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Morphology.Disambiguator.html">Disambiguator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Specification.html">Specification</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.html">Stemmer<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.html">Context<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.Visitor.html">Visitor</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Stemmer.CS.html">CS</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.Filter.html">Filter</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Sastrawi.Dictionary.ArrayDictionary.html">ArrayDictionary</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">DictionaryInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Sastrawi.Dictionary.html" title="Summary of Sastrawi\Dictionary"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ArrayDictionary</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Sastrawi\Dictionary\ArrayDictionary</span></b>			
+			 implements 
+				<a href="class-Sastrawi.Dictionary.DictionaryInterface.html"><span>Sastrawi\Dictionary\DictionaryInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Dictionary.html">Dictionary</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Sastrawi.Dictionary.ArrayDictionary.html#5-37" title="Go to source code">Sastrawi/Dictionary/ArrayDictionary.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sastrawi.Dictionary.ArrayDictionary.html#9-12" title="Go to source code">__construct</a>( <span>array <var>$words</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lookup" id="_lookup">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lookup">#</a>
+		<code><a href="source-class-Sastrawi.Dictionary.ArrayDictionary.html#14-19" title="Go to source code">lookup</a>( <span>string <var>$word</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Lookup a word, return the word if found</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lookup a word, return the word if found</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$word</var></dt>
+					<dd><code>string</code><br>$word the word to look up for</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html#_lookup">Sastrawi\Dictionary\DictionaryInterface::lookup()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code><a href="source-class-Sastrawi.Dictionary.ArrayDictionary.html#21-24" title="Go to source code">count</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Countable.html#_count">Countable::count()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addWords" id="_addWords">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addWords">#</a>
+		<code><a href="source-class-Sastrawi.Dictionary.ArrayDictionary.html#26-31" title="Go to source code">addWords</a>( <span>array <var>$words</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Sastrawi.Dictionary.ArrayDictionary.html#33-36" title="Go to source code">add</a>( <span>mixed <var>$word</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="words" id="$words">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Dictionary.ArrayDictionary.html#7" title="Go to source code"><var>$words</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$words" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Sastrawi\Stemmer\Context\Context</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?2342264317"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.html">Sastrawi<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Dictionary.html">Dictionary</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Morphology.html">Morphology<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Morphology.Disambiguator.html">Disambiguator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Specification.html">Specification</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.Stemmer.html">Stemmer<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Sastrawi.Stemmer.Context.html">Context<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.Visitor.html">Visitor</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Stemmer.CS.html">CS</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.Filter.html">Filter</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Sastrawi.Stemmer.Context.Context.html">Context</a></li>
+				<li><a href="class-Sastrawi.Stemmer.Context.Removal.html">Removal</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html">ContextInterface</a></li>
+				<li><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">RemovalInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Sastrawi.Stemmer.Context.html" title="Summary of Sastrawi\Stemmer\Context"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Context</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Sastrawi\Stemmer\Context\Context</span></b>			
+			 implements 
+				<a href="class-Sastrawi.Stemmer.Context.ContextInterface.html"><span>Sastrawi\Stemmer\Context\ContextInterface</span></a>, 
+			
+				<a href="class-Sastrawi.Stemmer.Context.Visitor.VisitableInterface.html"><span>Sastrawi\Stemmer\Context\Visitor\VisitableInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a>\<a href="namespace-Sastrawi.Stemmer.Context.html">Context</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Context.Context.html#10-180" title="Go to source code">Sastrawi/Stemmer/Context/Context.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#30-37" title="Go to source code">__construct</a>( <span>mixed <var>$originalWord</var></span>, <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initVisitors" id="_initVisitors">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initVisitors">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#39-46" title="Go to source code">initVisitors</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDictionary" id="_setDictionary">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDictionary">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#48-51" title="Go to source code">setDictionary</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDictionary" id="_getDictionary">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDictionary">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#53-56" title="Go to source code">getDictionary</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_getDictionary">Sastrawi\Stemmer\Context\ContextInterface::getDictionary()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOriginalWord" id="_getOriginalWord">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOriginalWord">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#58-61" title="Go to source code">getOriginalWord</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_getOriginalWord">Sastrawi\Stemmer\Context\ContextInterface::getOriginalWord()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCurrentWord" id="_setCurrentWord">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCurrentWord">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#63-66" title="Go to source code">setCurrentWord</a>( <span>mixed <var>$word</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_setCurrentWord">Sastrawi\Stemmer\Context\ContextInterface::setCurrentWord()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCurrentWord" id="_getCurrentWord">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCurrentWord">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#68-71" title="Go to source code">getCurrentWord</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_getCurrentWord">Sastrawi\Stemmer\Context\ContextInterface::getCurrentWord()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="stopProcess" id="_stopProcess">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_stopProcess">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#73-76" title="Go to source code">stopProcess</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_stopProcess">Sastrawi\Stemmer\Context\ContextInterface::stopProcess()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="processIsStopped" id="_processIsStopped">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processIsStopped">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#78-81" title="Go to source code">processIsStopped</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_processIsStopped">Sastrawi\Stemmer\Context\ContextInterface::processIsStopped()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addRemoval" id="_addRemoval">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addRemoval">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#83-86" title="Go to source code">addRemoval</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">Sastrawi\Stemmer\Context\RemovalInterface</a></code> <var>$removal</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_addRemoval">Sastrawi\Stemmer\Context\ContextInterface::addRemoval()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRemovals" id="_getRemovals">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRemovals">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#88-91" title="Go to source code">getRemovals</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html#_getRemovals">Sastrawi\Stemmer\Context\ContextInterface::getRemovals()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResult" id="_getResult">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResult">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#93-96" title="Go to source code">getResult</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#98-107" title="Go to source code">execute</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="doExecute" id="_doExecute">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_doExecute">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#109-157" title="Go to source code">doExecute</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="accept" id="_accept">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_accept">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#159-162" title="Go to source code">accept</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code> <var>$visitor</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitableInterface.html#_accept">Sastrawi\Stemmer\Context\Visitor\VisitableInterface::accept()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="acceptVisitors" id="_acceptVisitors">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_acceptVisitors">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#164-179" title="Go to source code">acceptVisitors</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.ContextInterface.html">Sastrawi\Stemmer\Context\ContextInterface</a></code> <var>$context</var></span>, <span>array <var>$visitors</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="originalWord" id="$originalWord">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#12" title="Go to source code"><var>$originalWord</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$originalWord" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="currentWord" id="$currentWord">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#14" title="Go to source code"><var>$currentWord</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$currentWord" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="processIsStopped" id="$processIsStopped">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#16" title="Go to source code"><var>$processIsStopped</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$processIsStopped" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="removals" id="$removals">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#18" title="Go to source code"><var>$removals</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$removals" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="dictionary" id="$dictionary">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#20" title="Go to source code"><var>$dictionary</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$dictionary" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="visitors" id="$visitors">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#22" title="Go to source code"><var>$visitors</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$visitors" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="suffixVisitors" id="$suffixVisitors">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#24" title="Go to source code"><var>$suffixVisitors</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$suffixVisitors" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prefixVisitors" id="$prefixVisitors">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#26" title="Go to source code"><var>$prefixVisitors</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$prefixVisitors" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="result" id="$result">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#28" title="Go to source code"><var>$result</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$result" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

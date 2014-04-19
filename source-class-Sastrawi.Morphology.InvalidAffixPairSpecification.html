@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File Sastrawi/Morphology/InvalidAffixPairSpecification.php</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?2342264317"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.html">Sastrawi<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Dictionary.html">Dictionary</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.Morphology.html">Morphology<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Morphology.Disambiguator.html">Disambiguator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Specification.html">Specification</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.html">Stemmer<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.html">Context<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.Visitor.html">Visitor</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Stemmer.CS.html">CS</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.Filter.html">Filter</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Sastrawi.Morphology.InvalidAffixPairSpecification.html">InvalidAffixPairSpecification</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Sastrawi.Morphology.html" title="Summary of Sastrawi\Morphology"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-Sastrawi.Morphology.InvalidAffixPairSpecification.html" title="Summary of Sastrawi\Morphology\InvalidAffixPairSpecification"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a>
+</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> Sastrawi\Morphology;
+</span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
+</span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-keyword1">use</span> Sastrawi\Specification\SpecificationInterface;
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-keyword1">class</span> <a id="InvalidAffixPairSpecification" href="#InvalidAffixPairSpecification">InvalidAffixPairSpecification</a> <span class="php-keyword1">implements</span> SpecificationInterface
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>{
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_isSatisfiedBy" href="#_isSatisfiedBy">isSatisfiedBy</a>(<span class="php-var">$word</span>)
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>    {
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^me(.*)kan$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>) {
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>        }
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$word</span> == <span class="php-quote">'ketahui'</span>) {
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>        }
+</span><span id="18" class="l"><a class="l" href="#18">18: </a>
+</span><span id="19" class="l"><a class="l" href="#19">19: </a>        <span class="php-var">$contains</span> = <span class="php-keyword1">false</span>
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>                    || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^ber(.*)i$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>                    || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^di(.*)an$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>                    || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^ke(.*)i$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>                    || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^ke(.*)an$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>                    || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^me(.*)an$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>
+</span><span id="25" class="l"><a class="l" href="#25">25: </a>                    || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^ter(.*)an$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>
+</span><span id="26" class="l"><a class="l" href="#26">26: </a>                    || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^per(.*)an$/'</span>, <span class="php-var">$word</span>) === <span class="php-num">1</span>;
+</span><span id="27" class="l"><a class="l" href="#27">27: </a>
+</span><span id="28" class="l"><a class="l" href="#28">28: </a>        <span class="php-keyword1">return</span> <span class="php-var">$contains</span>;
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>    }
+</span><span id="30" class="l"><a class="l" href="#30">30: </a>}
+</span><span id="31" class="l"><a class="l" href="#31">31: </a></span></code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
