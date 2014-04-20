@@ -206,7 +206,7 @@
 </span><span id="99" class="l"><a class="l" href="#99"> 99: </a>    {
 </span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-var">$result</span> = <span class="php-var">$this</span>-&gt;doExecute();
 </span><span id="101" class="l"><a class="l" href="#101">101: </a>
-</span><span id="102" class="l"><a class="l" href="#102">102: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;searchFor(<span class="php-var">$result</span>)) {
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;contains(<span class="php-var">$result</span>)) {
 </span><span id="103" class="l"><a class="l" href="#103">103: </a>            <span class="php-var">$this</span>-&gt;result = <span class="php-var">$result</span>;
 </span><span id="104" class="l"><a class="l" href="#104">104: </a>        } <span class="php-keyword1">else</span> {
 </span><span id="105" class="l"><a class="l" href="#105">105: </a>            <span class="php-var">$this</span>-&gt;result = <span class="php-var">$this</span>-&gt;originalWord;
@@ -218,13 +218,13 @@
 </span><span id="111" class="l"><a class="l" href="#111">111: </a>        <span class="php-var">$context</span> = <span class="php-var">$this</span>;
 </span><span id="112" class="l"><a class="l" href="#112">112: </a>        <span class="php-var">$word</span> = <span class="php-var">$this</span>-&gt;originalWord;
 </span><span id="113" class="l"><a class="l" href="#113">113: </a>
-</span><span id="114" class="l"><a class="l" href="#114">114: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;searchFor(<span class="php-var">$context</span>-&gt;getCurrentWord()) !== <span class="php-keyword1">null</span>) {
+</span><span id="114" class="l"><a class="l" href="#114">114: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;contains(<span class="php-var">$context</span>-&gt;getCurrentWord())) {
 </span><span id="115" class="l"><a class="l" href="#115">115: </a>            <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
 </span><span id="116" class="l"><a class="l" href="#116">116: </a>        }
 </span><span id="117" class="l"><a class="l" href="#117">117: </a>
 </span><span id="118" class="l"><a class="l" href="#118">118: </a>        <span class="php-var">$this</span>-&gt;acceptVisitors(<span class="php-var">$context</span>, <span class="php-var">$this</span>-&gt;visitors);
 </span><span id="119" class="l"><a class="l" href="#119">119: </a>
-</span><span id="120" class="l"><a class="l" href="#120">120: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;searchFor(<span class="php-var">$context</span>-&gt;getCurrentWord()) !== <span class="php-keyword1">null</span>) {
+</span><span id="120" class="l"><a class="l" href="#120">120: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;contains(<span class="php-var">$context</span>-&gt;getCurrentWord())) {
 </span><span id="121" class="l"><a class="l" href="#121">121: </a>            <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
 </span><span id="122" class="l"><a class="l" href="#122">122: </a>        }
 </span><span id="123" class="l"><a class="l" href="#123">123: </a>
@@ -233,13 +233,13 @@
 </span><span id="126" class="l"><a class="l" href="#126">126: </a>        <span class="php-keyword1">if</span> (! <span class="php-var">$csPrecedenceAdjustmentSpecification</span>-&gt;isSatisfiedBy(<span class="php-var">$word</span>)) {
 </span><span id="127" class="l"><a class="l" href="#127">127: </a>
 </span><span id="128" class="l"><a class="l" href="#128">128: </a>            <span class="php-var">$this</span>-&gt;acceptVisitors(<span class="php-var">$context</span>, <span class="php-var">$this</span>-&gt;suffixVisitors);
-</span><span id="129" class="l"><a class="l" href="#129">129: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;searchFor(<span class="php-var">$context</span>-&gt;getCurrentWord()) !== <span class="php-keyword1">null</span>) {
+</span><span id="129" class="l"><a class="l" href="#129">129: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;contains(<span class="php-var">$context</span>-&gt;getCurrentWord())) {
 </span><span id="130" class="l"><a class="l" href="#130">130: </a>                <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
 </span><span id="131" class="l"><a class="l" href="#131">131: </a>            }
 </span><span id="132" class="l"><a class="l" href="#132">132: </a>
 </span><span id="133" class="l"><a class="l" href="#133">133: </a>            <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">3</span>; <span class="php-var">$i</span>++) {
 </span><span id="134" class="l"><a class="l" href="#134">134: </a>                <span class="php-var">$this</span>-&gt;acceptVisitors(<span class="php-var">$context</span>, <span class="php-var">$this</span>-&gt;prefixVisitors);
-</span><span id="135" class="l"><a class="l" href="#135">135: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;searchFor(<span class="php-var">$context</span>-&gt;getCurrentWord()) !== <span class="php-keyword1">null</span>) {
+</span><span id="135" class="l"><a class="l" href="#135">135: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;contains(<span class="php-var">$context</span>-&gt;getCurrentWord())) {
 </span><span id="136" class="l"><a class="l" href="#136">136: </a>                    <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
 </span><span id="137" class="l"><a class="l" href="#137">137: </a>                }
 </span><span id="138" class="l"><a class="l" href="#138">138: </a>            }
@@ -248,13 +248,13 @@
 </span><span id="141" class="l"><a class="l" href="#141">141: </a>
 </span><span id="142" class="l"><a class="l" href="#142">142: </a>            <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-num">3</span>; <span class="php-var">$i</span>++) {
 </span><span id="143" class="l"><a class="l" href="#143">143: </a>                <span class="php-var">$this</span>-&gt;acceptVisitors(<span class="php-var">$context</span>, <span class="php-var">$this</span>-&gt;prefixVisitors);
-</span><span id="144" class="l"><a class="l" href="#144">144: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;searchFor(<span class="php-var">$context</span>-&gt;getCurrentWord()) !== <span class="php-keyword1">null</span>) {
+</span><span id="144" class="l"><a class="l" href="#144">144: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;contains(<span class="php-var">$context</span>-&gt;getCurrentWord())) {
 </span><span id="145" class="l"><a class="l" href="#145">145: </a>                    <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
 </span><span id="146" class="l"><a class="l" href="#146">146: </a>                }
 </span><span id="147" class="l"><a class="l" href="#147">147: </a>            }
 </span><span id="148" class="l"><a class="l" href="#148">148: </a>
 </span><span id="149" class="l"><a class="l" href="#149">149: </a>            <span class="php-var">$this</span>-&gt;acceptVisitors(<span class="php-var">$context</span>, <span class="php-var">$this</span>-&gt;suffixVisitors);
-</span><span id="150" class="l"><a class="l" href="#150">150: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;searchFor(<span class="php-var">$context</span>-&gt;getCurrentWord()) !== <span class="php-keyword1">null</span>) {
+</span><span id="150" class="l"><a class="l" href="#150">150: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;dictionary-&gt;contains(<span class="php-var">$context</span>-&gt;getCurrentWord())) {
 </span><span id="151" class="l"><a class="l" href="#151">151: </a>                <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
 </span><span id="152" class="l"><a class="l" href="#152">152: </a>            }
 </span><span id="153" class="l"><a class="l" href="#153">153: </a>
@@ -274,18 +274,17 @@
 </span><span id="167" class="l"><a class="l" href="#167">167: </a>
 </span><span id="168" class="l"><a class="l" href="#168">168: </a>            <span class="php-var">$context</span>-&gt;accept(<span class="php-var">$visitor</span>);
 </span><span id="169" class="l"><a class="l" href="#169">169: </a>
-</span><span id="170" class="l"><a class="l" href="#170">170: </a>            <span class="php-var">$lookupResult</span> = <span class="php-var">$context</span>-&gt;getDictionary()-&gt;searchFor(<span class="php-var">$context</span>-&gt;getCurrentWord());
-</span><span id="171" class="l"><a class="l" href="#171">171: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$lookupResult</span> !== <span class="php-keyword1">null</span>) {
-</span><span id="172" class="l"><a class="l" href="#172">172: </a>                <span class="php-keyword1">return</span> <span class="php-var">$lookupResult</span>;
-</span><span id="173" class="l"><a class="l" href="#173">173: </a>            }
-</span><span id="174" class="l"><a class="l" href="#174">174: </a>
-</span><span id="175" class="l"><a class="l" href="#175">175: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$context</span>-&gt;processIsStopped()) {
-</span><span id="176" class="l"><a class="l" href="#176">176: </a>                <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
-</span><span id="177" class="l"><a class="l" href="#177">177: </a>            }
-</span><span id="178" class="l"><a class="l" href="#178">178: </a>        }
-</span><span id="179" class="l"><a class="l" href="#179">179: </a>    }
-</span><span id="180" class="l"><a class="l" href="#180">180: </a>}
-</span><span id="181" class="l"><a class="l" href="#181">181: </a></span></code></pre>
+</span><span id="170" class="l"><a class="l" href="#170">170: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$context</span>-&gt;getDictionary()-&gt;contains(<span class="php-var">$context</span>-&gt;getCurrentWord())) {
+</span><span id="171" class="l"><a class="l" href="#171">171: </a>                <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
+</span><span id="172" class="l"><a class="l" href="#172">172: </a>            }
+</span><span id="173" class="l"><a class="l" href="#173">173: </a>
+</span><span id="174" class="l"><a class="l" href="#174">174: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$context</span>-&gt;processIsStopped()) {
+</span><span id="175" class="l"><a class="l" href="#175">175: </a>                <span class="php-keyword1">return</span> <span class="php-var">$context</span>-&gt;getCurrentWord();
+</span><span id="176" class="l"><a class="l" href="#176">176: </a>            }
+</span><span id="177" class="l"><a class="l" href="#177">177: </a>        }
+</span><span id="178" class="l"><a class="l" href="#178">178: </a>    }
+</span><span id="179" class="l"><a class="l" href="#179">179: </a>}
+</span><span id="180" class="l"><a class="l" href="#180">180: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
