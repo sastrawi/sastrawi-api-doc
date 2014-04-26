@@ -8,7 +8,7 @@
 	<title>File Sastrawi/Stemmer/Context/Visitor/AbstractDisambiguatePrefixRule.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?709491018"></script>
-	<script type="text/javascript" src="elementlist.js?1272041263"></script>
+	<script type="text/javascript" src="elementlist.js?2882544545"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -131,7 +131,7 @@
 </span><span id="18" class="l"><a class="l" href="#18">18: </a>            <span class="php-var">$this</span>-&gt;initDisambiguators();
 </span><span id="19" class="l"><a class="l" href="#19">19: </a>        }
 </span><span id="20" class="l"><a class="l" href="#20">20: </a>
-</span><span id="21" class="l"><a class="l" href="#21">21: </a>        <span class="php-var">$lookup</span> = <span class="php-keyword1">null</span>;
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>        <span class="php-var">$result</span> = <span class="php-keyword1">null</span>;
 </span><span id="22" class="l"><a class="l" href="#22">22: </a>
 </span><span id="23" class="l"><a class="l" href="#23">23: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;disambiguators <span class="php-keyword1">as</span> <span class="php-var">$disambiguator</span>) {
 </span><span id="24" class="l"><a class="l" href="#24">24: </a>            <span class="php-var">$result</span> = <span class="php-var">$disambiguator</span>-&gt;disambiguate(<span class="php-var">$context</span>-&gt;getCurrentWord());
@@ -151,26 +151,27 @@
 </span><span id="38" class="l"><a class="l" href="#38">38: </a>            <span class="php-var">$this</span>,
 </span><span id="39" class="l"><a class="l" href="#39">39: </a>            <span class="php-var">$context</span>-&gt;getCurrentWord(),
 </span><span id="40" class="l"><a class="l" href="#40">40: </a>            <span class="php-var">$result</span>,
-</span><span id="41" class="l"><a class="l" href="#41">41: </a>            <span class="php-var">$removedPart</span>
-</span><span id="42" class="l"><a class="l" href="#42">42: </a>        );
-</span><span id="43" class="l"><a class="l" href="#43">43: </a>
-</span><span id="44" class="l"><a class="l" href="#44">44: </a>        <span class="php-var">$context</span>-&gt;addRemoval(<span class="php-var">$removal</span>);
-</span><span id="45" class="l"><a class="l" href="#45">45: </a>        <span class="php-var">$context</span>-&gt;setCurrentWord(<span class="php-var">$result</span>);
-</span><span id="46" class="l"><a class="l" href="#46">46: </a>    }
-</span><span id="47" class="l"><a class="l" href="#47">47: </a>
-</span><span id="48" class="l"><a class="l" href="#48">48: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_addDisambiguators" href="#_addDisambiguators">addDisambiguators</a>(<span class="php-keyword1">array</span> <span class="php-var">$disambiguators</span>)
-</span><span id="49" class="l"><a class="l" href="#49">49: </a>    {
-</span><span id="50" class="l"><a class="l" href="#50">50: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$disambiguators</span> <span class="php-keyword1">as</span> <span class="php-var">$disambiguator</span>) {
-</span><span id="51" class="l"><a class="l" href="#51">51: </a>            <span class="php-var">$this</span>-&gt;addDisambiguator(<span class="php-var">$disambiguator</span>);
-</span><span id="52" class="l"><a class="l" href="#52">52: </a>        }
-</span><span id="53" class="l"><a class="l" href="#53">53: </a>    }
-</span><span id="54" class="l"><a class="l" href="#54">54: </a>
-</span><span id="55" class="l"><a class="l" href="#55">55: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_addDisambiguator" href="#_addDisambiguator">addDisambiguator</a>(DisambiguatorInterface <span class="php-var">$disambiguator</span>)
-</span><span id="56" class="l"><a class="l" href="#56">56: </a>    {
-</span><span id="57" class="l"><a class="l" href="#57">57: </a>        <span class="php-var">$this</span>-&gt;disambiguators[] = <span class="php-var">$disambiguator</span>;
-</span><span id="58" class="l"><a class="l" href="#58">58: </a>    }
-</span><span id="59" class="l"><a class="l" href="#59">59: </a>}
-</span><span id="60" class="l"><a class="l" href="#60">60: </a></span></code></pre>
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>            <span class="php-var">$removedPart</span>,
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>            <span class="php-quote">'DP'</span>
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>        );
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>        <span class="php-var">$context</span>-&gt;addRemoval(<span class="php-var">$removal</span>);
+</span><span id="46" class="l"><a class="l" href="#46">46: </a>        <span class="php-var">$context</span>-&gt;setCurrentWord(<span class="php-var">$result</span>);
+</span><span id="47" class="l"><a class="l" href="#47">47: </a>    }
+</span><span id="48" class="l"><a class="l" href="#48">48: </a>
+</span><span id="49" class="l"><a class="l" href="#49">49: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_addDisambiguators" href="#_addDisambiguators">addDisambiguators</a>(<span class="php-keyword1">array</span> <span class="php-var">$disambiguators</span>)
+</span><span id="50" class="l"><a class="l" href="#50">50: </a>    {
+</span><span id="51" class="l"><a class="l" href="#51">51: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$disambiguators</span> <span class="php-keyword1">as</span> <span class="php-var">$disambiguator</span>) {
+</span><span id="52" class="l"><a class="l" href="#52">52: </a>            <span class="php-var">$this</span>-&gt;addDisambiguator(<span class="php-var">$disambiguator</span>);
+</span><span id="53" class="l"><a class="l" href="#53">53: </a>        }
+</span><span id="54" class="l"><a class="l" href="#54">54: </a>    }
+</span><span id="55" class="l"><a class="l" href="#55">55: </a>
+</span><span id="56" class="l"><a class="l" href="#56">56: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_addDisambiguator" href="#_addDisambiguator">addDisambiguator</a>(DisambiguatorInterface <span class="php-var">$disambiguator</span>)
+</span><span id="57" class="l"><a class="l" href="#57">57: </a>    {
+</span><span id="58" class="l"><a class="l" href="#58">58: </a>        <span class="php-var">$this</span>-&gt;disambiguators[] = <span class="php-var">$disambiguator</span>;
+</span><span id="59" class="l"><a class="l" href="#59">59: </a>    }
+</span><span id="60" class="l"><a class="l" href="#60">60: </a>}
+</span><span id="61" class="l"><a class="l" href="#61">61: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

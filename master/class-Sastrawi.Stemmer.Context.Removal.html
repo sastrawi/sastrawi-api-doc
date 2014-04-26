@@ -7,7 +7,7 @@
 	<title>Class Sastrawi\Stemmer\Context\Removal</title>
 
 	<script type="text/javascript" src="resources/combined.js?709491018"></script>
-	<script type="text/javascript" src="elementlist.js?1272041263"></script>
+	<script type="text/javascript" src="elementlist.js?2882544545"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -131,7 +131,7 @@
 		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a>\<a href="namespace-Sastrawi.Stemmer.Context.html">Context</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Context.Removal.html#5-46" title="Go to source code">Sastrawi/Stemmer/Context/Removal.php</a><br />
+		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Context.Removal.html#5-61" title="Go to source code">Sastrawi/Stemmer/Context/Removal.php</a><br />
 	</div>
 
 
@@ -149,7 +149,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#15-25" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code> <var>$visitor</var></span>, <span>mixed <var>$subject</var></span>, <span>mixed <var>$result</var></span>, <span>mixed <var>$removedPart</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#17-35" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code> <var>$visitor</var></span>, <span>string <var>$subject</var></span>, <span>string <var>$result</var></span>, <span>string <var>$removedPart</var></span>, <span>mixed <var>$affixType</var></span> )</code>
 
 		<div class="description short">
 			
@@ -159,6 +159,19 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$visitor</var></dt>
+					<dd><code><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code></code><br>$visitor</dd>
+					<dt><var>$subject</var></dt>
+					<dd><code>string</code><br>$subject</dd>
+					<dt><var>$result</var></dt>
+					<dd><code>string</code><br>$result</dd>
+					<dt><var>$removedPart</var></dt>
+					<dd><code>string</code><br>$removedPart</dd>
+					<dt><var>$affixType</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -171,14 +184,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVisitor">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#27-30" title="Go to source code">getVisitor</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#37-40" title="Go to source code">getVisitor</a>( )</code>
 
 		<div class="description short">
 			
@@ -189,6 +202,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code></code><br />
+				</div>
 
 
 
@@ -202,14 +219,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSubject">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#32-35" title="Go to source code">getSubject</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#42-45" title="Go to source code">getSubject</a>( )</code>
 
 		<div class="description short">
 			
@@ -220,6 +237,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -233,14 +254,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getResult">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#37-40" title="Go to source code">getResult</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#47-50" title="Go to source code">getResult</a>( )</code>
 
 		<div class="description short">
 			
@@ -251,6 +272,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -264,14 +289,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRemovedPart">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#42-45" title="Go to source code">getRemovedPart</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#52-55" title="Go to source code">getRemovedPart</a>( )</code>
 
 		<div class="description short">
 			
@@ -282,12 +307,51 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
 
 				<h4>Implementation of</h4>
 				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html#_getRemovedPart">Sastrawi\Stemmer\Context\RemovalInterface::getRemovedPart()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAffixType" id="_getAffixType">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAffixType">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Removal.html#57-60" title="Go to source code">getAffixType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html#_getAffixType">Sastrawi\Stemmer\Context\RemovalInterface::getAffixType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -387,6 +451,29 @@
 		<td class="value"><code></code></td>
 		<td class="description"><div>
 			<a href="#$removedPart" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="affixType" id="$affixType">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Removal.html#15" title="Go to source code"><var>$affixType</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$affixType" class="anchor">#</a>
 
 			<div class="description short">
 				

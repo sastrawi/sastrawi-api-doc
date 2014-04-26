@@ -3,9 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
-	<meta name="robots" content="noindex" />
 
-	<title>File Sastrawi/Morphology/Disambiguator/DisambiguatorPrefixRule5.php</title>
+	<title>Class Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule30c</title>
 
 	<script type="text/javascript" src="resources/combined.js?709491018"></script>
 	<script type="text/javascript" src="elementlist.js?2882544545"></script>
@@ -88,14 +87,14 @@
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule3.html">DisambiguatorPrefixRule3</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule30a.html">DisambiguatorPrefixRule30a</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule30b.html">DisambiguatorPrefixRule30b</a></li>
-				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule30c.html">DisambiguatorPrefixRule30c</a></li>
+				<li class="active"><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule30c.html">DisambiguatorPrefixRule30c</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule31.html">DisambiguatorPrefixRule31</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule32.html">DisambiguatorPrefixRule32</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule34.html">DisambiguatorPrefixRule34</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule35.html">DisambiguatorPrefixRule35</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule36.html">DisambiguatorPrefixRule36</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule4.html">DisambiguatorPrefixRule4</a></li>
-				<li class="active"><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule5.html">DisambiguatorPrefixRule5</a></li>
+				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule5.html">DisambiguatorPrefixRule5</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule6a.html">DisambiguatorPrefixRule6a</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule6b.html">DisambiguatorPrefixRule6b</a></li>
 				<li><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule7.html">DisambiguatorPrefixRule7</a></li>
@@ -134,9 +133,8 @@
 			<li>
 				<a href="namespace-Sastrawi.Morphology.Disambiguator.html" title="Summary of Sastrawi\Morphology\Disambiguator"><span>Namespace</span></a>
 			</li>
-			<li>
-				<a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule5.html" title="Summary of Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule5"><span>Class</span></a>
-			</li>
+			<li class="active">
+<span>Class</span>			</li>
 		</ul>
 		<ul>
 			<li>
@@ -147,31 +145,105 @@
 		</ul>
 	</div>
 
-<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
-</span><span id="2" class="l"><a class="l" href="#2"> 2: </a>
-</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> Sastrawi\Morphology\Disambiguator;
-</span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
-</span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment">/**
-</span></span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-comment"> * Disambiguate Prefix Rule 5
-</span></span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-comment"> * Rule 5 : beC1erC2 -&gt; be-C1erC2 where C1 != 'r'
-</span></span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-comment"> */</span>
-</span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-keyword1">class</span> <a id="DisambiguatorPrefixRule5" href="#DisambiguatorPrefixRule5">DisambiguatorPrefixRule5</a> <span class="php-keyword1">implements</span> DisambiguatorInterface
-</span><span id="10" class="l"><a class="l" href="#10">10: </a>{
-</span><span id="11" class="l"><a class="l" href="#11">11: </a>    <span class="php-comment">/**
-</span></span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-comment">     * Disambiguate Prefix Rule 5
-</span></span><span id="13" class="l"><a class="l" href="#13">13: </a><span class="php-comment">     * Rule 5 : beC1erC2 -&gt; be-C1erC2 where C1 != 'r'
-</span></span><span id="14" class="l"><a class="l" href="#14">14: </a><span class="php-comment">     */</span>
-</span><span id="15" class="l"><a class="l" href="#15">15: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_disambiguate" href="#_disambiguate">disambiguate</a>(<span class="php-var">$word</span>)
-</span><span id="16" class="l"><a class="l" href="#16">16: </a>    {
-</span><span id="17" class="l"><a class="l" href="#17">17: </a>        <span class="php-var">$matches</span>  = <span class="php-keyword1">null</span>;
-</span><span id="18" class="l"><a class="l" href="#18">18: </a>        <span class="php-var">$contains</span> = <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^be([bcdfghjklmnpqstvwxyz])(er[bcdfghjklmnpqrstvwxyz])(.*)$/'</span>, <span class="php-var">$word</span>, <span class="php-var">$matches</span>);
-</span><span id="19" class="l"><a class="l" href="#19">19: </a>
-</span><span id="20" class="l"><a class="l" href="#20">20: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$contains</span> === <span class="php-num">1</span>) {
-</span><span id="21" class="l"><a class="l" href="#21">21: </a>            <span class="php-keyword1">return</span> <span class="php-var">$matches</span>[<span class="php-num">1</span>] . <span class="php-var">$matches</span>[<span class="php-num">2</span>] . <span class="php-var">$matches</span>[<span class="php-num">3</span>];
-</span><span id="22" class="l"><a class="l" href="#22">22: </a>        }
-</span><span id="23" class="l"><a class="l" href="#23">23: </a>    }
-</span><span id="24" class="l"><a class="l" href="#24">24: </a>}
-</span><span id="25" class="l"><a class="l" href="#25">25: </a></span></code></pre>
+<div id="content" class="class">
+	<h1>Class DisambiguatorPrefixRule30c</h1>
+
+
+	<div class="description">
+	
+<p>Disambiguate Prefix Rule 30c Rule 30c : pengV -&gt; pengV- where V = 'e'</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule30c</span></b>			
+			 implements 
+				<a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorInterface.html"><span>Sastrawi\Morphology\Disambiguator\DisambiguatorInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Morphology.html">Morphology</a>\<a href="namespace-Sastrawi.Morphology.Disambiguator.html">Disambiguator</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule30c.html#5-21" title="Go to source code">Sastrawi/Morphology/Disambiguator/DisambiguatorPrefixRule30c.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="disambiguate" id="_disambiguate">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_disambiguate">#</a>
+		<code><a href="source-class-Sastrawi.Morphology.Disambiguator.DisambiguatorPrefixRule30c.html#11-20" title="Go to source code">disambiguate</a>( <span>mixed <var>$word</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Disambiguate Prefix Rule 30c Rule 30a : peng-V -&gt; pengV- where V = 'e'</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Disambiguate Prefix Rule 30c Rule 30a : peng-V -&gt; pengV- where V = 'e'</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Morphology.Disambiguator.DisambiguatorInterface.html#_disambiguate">Sastrawi\Morphology\Disambiguator\DisambiguatorInterface::disambiguate()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

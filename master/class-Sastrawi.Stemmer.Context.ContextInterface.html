@@ -7,7 +7,7 @@
 	<title>Interface Sastrawi\Stemmer\Context\ContextInterface</title>
 
 	<script type="text/javascript" src="resources/combined.js?709491018"></script>
-	<script type="text/javascript" src="elementlist.js?1272041263"></script>
+	<script type="text/javascript" src="elementlist.js?2882544545"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -126,7 +126,7 @@
 		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a>\<a href="namespace-Sastrawi.Stemmer.Context.html">Context</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#5-22" title="Go to source code">Sastrawi/Stemmer/Context/ContextInterface.php</a><br />
+		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#5-46" title="Go to source code">Sastrawi/Stemmer/Context/ContextInterface.php</a><br />
 	</div>
 
 
@@ -137,14 +137,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOriginalWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#7" title="Go to source code">getOriginalWord</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#7-10" title="Go to source code">getOriginalWord</a>( )</code>
 
 		<div class="description short">
 			
@@ -155,6 +155,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -173,7 +177,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCurrentWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#9" title="Go to source code">setCurrentWord</a>( <span>mixed <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#12-15" title="Go to source code">setCurrentWord</a>( <span>mixed <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
@@ -195,14 +199,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCurrentWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#11" title="Go to source code">getCurrentWord</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#17-20" title="Go to source code">getCurrentWord</a>( )</code>
 
 		<div class="description short">
 			
@@ -213,6 +217,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
 
 
 
@@ -224,14 +232,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDictionary">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#13" title="Go to source code">getDictionary</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#22-25" title="Go to source code">getDictionary</a>( )</code>
 
 		<div class="description short">
 			
@@ -242,6 +250,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code></code><br />
+				</div>
 
 
 
@@ -260,7 +272,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stopProcess">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#15" title="Go to source code">stopProcess</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#27-30" title="Go to source code">stopProcess</a>( )</code>
 
 		<div class="description short">
 			
@@ -282,14 +294,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_processIsStopped">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#17" title="Go to source code">processIsStopped</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#32-35" title="Go to source code">processIsStopped</a>( )</code>
 
 		<div class="description short">
 			
@@ -300,6 +312,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
 
 
 
@@ -318,7 +334,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addRemoval">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#19" title="Go to source code">addRemoval</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">Sastrawi\Stemmer\Context\RemovalInterface</a></code> <var>$removal</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#37-40" title="Go to source code">addRemoval</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">Sastrawi\Stemmer\Context\RemovalInterface</a></code> <var>$removal</var></span> )</code>
 
 		<div class="description short">
 			
@@ -340,14 +356,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">Sastrawi\Stemmer\Context\RemovalInterface</a>[]</code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRemovals">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#21" title="Go to source code">getRemovals</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.ContextInterface.html#42-45" title="Go to source code">getRemovals</a>( )</code>
 
 		<div class="description short">
 			
@@ -358,6 +374,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">Sastrawi\Stemmer\Context\RemovalInterface</a>[]</code></code><br />
+				</div>
 
 
 
