@@ -133,7 +133,7 @@
 		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a>\<a href="namespace-Sastrawi.Stemmer.Context.html">Context</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Context.Context.html#10-258" title="Go to source code">Sastrawi/Stemmer/Context/Context.php</a><br />
+		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Context.Context.html#10-262" title="Go to source code">Sastrawi/Stemmer/Context/Context.php</a><br />
 	</div>
 
 
@@ -151,7 +151,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#30-41" title="Go to source code">__construct</a>( <span>string <var>$originalWord</var></span>, <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#32-47" title="Go to source code">__construct</a>( <span>string <var>$originalWord</var></span>, <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span>, <span><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorProvider.html">Sastrawi\Stemmer\Context\Visitor\VisitorProvider</a></code> <var>$visitorProvider</var></span> )</code>
 
 		<div class="description short">
 			
@@ -167,6 +167,8 @@
 					<dd><code>string</code><br>$originalWord</dd>
 					<dt><var>$dictionary</var></dt>
 					<dd><code><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code></code><br>$dictionary</dd>
+					<dt><var>$visitorProvider</var></dt>
+					<dd></dd>
 				</dl></div>
 
 
@@ -187,7 +189,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_initVisitors">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#43-50" title="Go to source code">initVisitors</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#49-54" title="Go to source code">initVisitors</a>( )</code>
 
 		<div class="description short">
 			
@@ -216,7 +218,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDictionary">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#52-55" title="Go to source code">setDictionary</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#56-59" title="Go to source code">setDictionary</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
 
 		<div class="description short">
 			
@@ -245,7 +247,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDictionary">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#57-60" title="Go to source code">getDictionary</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#61-64" title="Go to source code">getDictionary</a>( )</code>
 
 		<div class="description short">
 			
@@ -280,7 +282,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOriginalWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#62-65" title="Go to source code">getOriginalWord</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#66-69" title="Go to source code">getOriginalWord</a>( )</code>
 
 		<div class="description short">
 			
@@ -315,7 +317,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCurrentWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#67-70" title="Go to source code">setCurrentWord</a>( <span>mixed <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#71-74" title="Go to source code">setCurrentWord</a>( <span>mixed <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
@@ -346,7 +348,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCurrentWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#72-75" title="Go to source code">getCurrentWord</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#76-79" title="Go to source code">getCurrentWord</a>( )</code>
 
 		<div class="description short">
 			
@@ -381,7 +383,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stopProcess">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#77-80" title="Go to source code">stopProcess</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#81-84" title="Go to source code">stopProcess</a>( )</code>
 
 		<div class="description short">
 			
@@ -412,7 +414,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_processIsStopped">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#82-85" title="Go to source code">processIsStopped</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#86-89" title="Go to source code">processIsStopped</a>( )</code>
 
 		<div class="description short">
 			
@@ -447,7 +449,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addRemoval">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#87-90" title="Go to source code">addRemoval</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">Sastrawi\Stemmer\Context\RemovalInterface</a></code> <var>$removal</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#91-94" title="Go to source code">addRemoval</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.RemovalInterface.html">Sastrawi\Stemmer\Context\RemovalInterface</a></code> <var>$removal</var></span> )</code>
 
 		<div class="description short">
 			
@@ -478,7 +480,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRemovals">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#92-95" title="Go to source code">getRemovals</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#96-99" title="Go to source code">getRemovals</a>( )</code>
 
 		<div class="description short">
 			
@@ -513,7 +515,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getResult">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#97-100" title="Go to source code">getResult</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#101-104" title="Go to source code">getResult</a>( )</code>
 
 		<div class="description short">
 			
@@ -542,7 +544,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_execute">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#102-111" title="Go to source code">execute</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#106-115" title="Go to source code">execute</a>( )</code>
 
 		<div class="description short">
 			
@@ -571,7 +573,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_doExecute">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#113-168" title="Go to source code">doExecute</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#117-172" title="Go to source code">doExecute</a>( )</code>
 
 		<div class="description short">
 			
@@ -604,7 +606,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_accept">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#170-173" title="Go to source code">accept</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code> <var>$visitor</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#174-177" title="Go to source code">accept</a>( <span><code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorInterface.html">Sastrawi\Stemmer\Context\Visitor\VisitorInterface</a></code> <var>$visitor</var></span> )</code>
 
 		<div class="description short">
 			
@@ -635,7 +637,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_acceptVisitors">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#175-189" title="Go to source code">acceptVisitors</a>( <span>array <var>$visitors</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#179-193" title="Go to source code">acceptVisitors</a>( <span>array <var>$visitors</var></span> )</code>
 
 		<div class="description short">
 			
@@ -664,7 +666,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_loopPengembalianAkhiran">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#191-233" title="Go to source code">loopPengembalianAkhiran</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#195-237" title="Go to source code">loopPengembalianAkhiran</a>( )</code>
 
 		<div class="description short">
 			
@@ -697,7 +699,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isSuffixRemoval">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#235-240" title="Go to source code">isSuffixRemoval</a>( <span>mixed <var>$removal</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#239-244" title="Go to source code">isSuffixRemoval</a>( <span>mixed <var>$removal</var></span> )</code>
 
 		<div class="description short">
 			
@@ -726,7 +728,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_restorePrefix">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#242-257" title="Go to source code">restorePrefix</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Context.Context.html#246-261" title="Go to source code">restorePrefix</a>( )</code>
 
 		<div class="description short">
 			
@@ -874,6 +876,29 @@
 			</div>
 		</div></td>
 	</tr>
+	<tr data-order="visitorProvider" id="$visitorProvider">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#22" title="Go to source code"><var>$visitorProvider</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$visitorProvider" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="visitors" id="$visitors">
 		<td class="attributes"><code>
 			protected  
@@ -881,7 +906,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#22" title="Go to source code"><var>$visitors</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#24" title="Go to source code"><var>$visitors</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -904,7 +929,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#24" title="Go to source code"><var>$suffixVisitors</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#26" title="Go to source code"><var>$suffixVisitors</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -927,7 +952,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#26" title="Go to source code"><var>$prefixVisitors</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#28" title="Go to source code"><var>$prefixVisitors</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -950,7 +975,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#28" title="Go to source code"><var>$result</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Context.Context.html#30" title="Go to source code"><var>$result</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
