@@ -108,7 +108,8 @@
 
 	<div class="description">
 	
-<p>The stemmer interface</p>
+<p>Indonesian Stemmer. Nazief &amp; Adriani, CS Stemmer, ECS Stemmer, Improved
+ECS.</p>
 
 	</div>
 
@@ -135,12 +136,9 @@
 		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a><br />
 		
 
-				<b>Author:</b>
-				Andy Librian &lt;<a
-href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;<br />
-				<b>Since:</b>
-				0.4.0<br />
-		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Stemmer.html#15-97" title="Go to source code">Sastrawi/Stemmer/Stemmer.php</a><br />
+				<b>Link:</b>
+				<a href="https://github.com/sastrawi/sastrawi/wiki/Resources">https://github.com/sastrawi/sastrawi/wiki/Resources</a><br />
+		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Stemmer.html#15-133" title="Go to source code">Sastrawi/Stemmer/Stemmer.php</a><br />
 	</div>
 
 
@@ -158,7 +156,7 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#21-25" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#37-41" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
 
 		<div class="description short">
 			
@@ -180,14 +178,14 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 		<td class="attributes"><code>
 			 public 
-			
+			<code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDictionary">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#27-30" title="Go to source code">getDictionary</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#43-49" title="Go to source code">getDictionary</a>( )</code>
 
 		<div class="description short">
 			
@@ -198,6 +196,10 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code></code><br />
+				</div>
 
 
 
@@ -216,17 +218,17 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stem">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#32-50" title="Go to source code">stem</a>( <span>string <var>$text</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#51-69" title="Go to source code">stem</a>( <span>string <var>$text</var></span> )</code>
 
 		<div class="description short">
 			
-<p>Stem a text string to its common stem form</p>
+<p>Stem a text string to its common stem form.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Stem a text string to its common stem form</p>
+<p>Stem a text string to its common stem form.</p>
 
 
 
@@ -253,24 +255,37 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 		<td class="attributes"><code>
 			 protected 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stemWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#52-59" title="Go to source code">stemWord</a>( <span>mixed <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#71-84" title="Go to source code">stemWord</a>( <span>string <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Stem a word to its common stem form.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Stem a word to its common stem form.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$word</var></dt>
+					<dd><code>string</code><br>$word the word to stem, e.g : memberdayakan</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>common stem form, e.g : daya<br />
+				</div>
 
 
 
@@ -282,14 +297,14 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 		<td class="attributes"><code>
 			 protected 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isPlural">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#61-64" title="Go to source code">isPlural</a>( <span>mixed <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#86-92" title="Go to source code">isPlural</a>( <span>mixed <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
@@ -300,6 +315,10 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
 
 
 
@@ -311,26 +330,45 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 		<td class="attributes"><code>
 			 protected 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stemPluralWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#66-82" title="Go to source code">stemPluralWord</a>( <span>mixed <var>$plural</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#94-118" title="Go to source code">stemPluralWord</a>( <span>string <var>$plural</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Stem a plural word to its common stem form. Asian J. (2007) “Effective
+Techniques for Indonesian Text Retrieval” page 76-77.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Stem a plural word to its common stem form. Asian J. (2007) “Effective
+Techniques for Indonesian Text Retrieval” page 76-77.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$plural</var></dt>
+					<dd><code>string</code><br>$word the word to stem, e.g : bersama-sama</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>common stem form, e.g : sama<br />
+				</div>
 
 
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://researchbank.rmit.edu.au/eserv/rmit:6312/Asian.pdf">http://researchbank.rmit.edu.au/eserv/rmit:6312/Asian.pdf</a><br />
+				</div>
 
 
 		</div>
@@ -347,17 +385,17 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stemSingularWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#84-96" title="Go to source code">stemSingularWord</a>( <span>string <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#120-132" title="Go to source code">stemSingularWord</a>( <span>string <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
-<p>Stem a singular word to its common stem form</p>
+<p>Stem a singular word to its common stem form.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Stem a singular word to its common stem form</p>
+<p>Stem a singular word to its common stem form.</p>
 
 
 
@@ -396,11 +434,11 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 	<tr data-order="dictionary" id="$dictionary">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#17" title="Go to source code"><var>$dictionary</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#23-28" title="Go to source code"><var>$dictionary</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -408,10 +446,14 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 			<div class="description short">
 				
+<p>The dictionary containing root words</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>The dictionary containing root words</p>
+
 
 			</div>
 		</div></td>
@@ -419,11 +461,11 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 	<tr data-order="visitorProvider" id="$visitorProvider">
 		<td class="attributes"><code>
 			protected  
-			mixed
+			<code><a href="class-Sastrawi.Stemmer.Context.Visitor.VisitorProvider.html">Sastrawi\Stemmer\Context\Visitor\VisitorProvider</a></code>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#19" title="Go to source code"><var>$visitorProvider</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#30-35" title="Go to source code"><var>$visitorProvider</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -431,10 +473,14 @@ href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;
 
 			<div class="description short">
 				
+<p>Visitor provider</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Visitor provider</p>
+
 
 			</div>
 		</div></td>
