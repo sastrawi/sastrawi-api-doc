@@ -7,7 +7,7 @@
 	<title>Class Sastrawi\Stemmer\Stemmer</title>
 
 	<script type="text/javascript" src="resources/combined.js?709491018"></script>
-	<script type="text/javascript" src="elementlist.js?3497448448"></script>
+	<script type="text/javascript" src="elementlist.js?4158183784"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -59,6 +59,10 @@
 				<li><a href="class-Sastrawi.Stemmer.StemmerFactory.html">StemmerFactory</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Sastrawi.Stemmer.StemmerInterface.html">StemmerInterface</a></li>
+			</ul>
 
 
 
@@ -102,7 +106,21 @@
 	<h1>Class Stemmer</h1>
 
 
+	<div class="description">
+	
+<p>The stemmer interface</p>
 
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Sastrawi\Stemmer\Stemmer</span></b>			
+			 implements 
+				<a href="class-Sastrawi.Stemmer.StemmerInterface.html"><span>Sastrawi\Stemmer\StemmerInterface</span></a>
+			
+			
+		</dd>
+	</dl>
 
 
 
@@ -117,7 +135,12 @@
 		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Stemmer.html#9-91" title="Go to source code">Sastrawi/Stemmer/Stemmer.php</a><br />
+				<b>Author:</b>
+				Andy Librian &lt;<a
+href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;<br />
+				<b>Since:</b>
+				0.4.0<br />
+		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.Stemmer.html#15-97" title="Go to source code">Sastrawi/Stemmer/Stemmer.php</a><br />
 	</div>
 
 
@@ -135,7 +158,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#15-19" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#21-25" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
 
 		<div class="description short">
 			
@@ -164,7 +187,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDictionary">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#21-24" title="Go to source code">getDictionary</a>( )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#27-30" title="Go to source code">getDictionary</a>( )</code>
 
 		<div class="description short">
 			
@@ -193,7 +216,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stem">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#26-44" title="Go to source code">stem</a>( <span>string <var>$text</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#32-50" title="Go to source code">stem</a>( <span>string <var>$text</var></span> )</code>
 
 		<div class="description short">
 			
@@ -221,6 +244,8 @@
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.StemmerInterface.html#_stem">Sastrawi\Stemmer\StemmerInterface::stem()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -235,7 +260,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stemWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#46-53" title="Go to source code">stemWord</a>( <span>mixed <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#52-59" title="Go to source code">stemWord</a>( <span>mixed <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
@@ -264,7 +289,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isPlural">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#55-58" title="Go to source code">isPlural</a>( <span>mixed <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#61-64" title="Go to source code">isPlural</a>( <span>mixed <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
@@ -293,7 +318,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stemPluralWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#60-76" title="Go to source code">stemPluralWord</a>( <span>mixed <var>$plural</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#66-82" title="Go to source code">stemPluralWord</a>( <span>mixed <var>$plural</var></span> )</code>
 
 		<div class="description short">
 			
@@ -322,7 +347,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stemSingularWord">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#78-90" title="Go to source code">stemSingularWord</a>( <span>string <var>$word</var></span> )</code>
+		<code><a href="source-class-Sastrawi.Stemmer.Stemmer.html#84-96" title="Go to source code">stemSingularWord</a>( <span>string <var>$word</var></span> )</code>
 
 		<div class="description short">
 			
@@ -375,7 +400,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#11" title="Go to source code"><var>$dictionary</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#17" title="Go to source code"><var>$dictionary</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -398,7 +423,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#13" title="Go to source code"><var>$visitorProvider</var></a>
+				<a href="source-class-Sastrawi.Stemmer.Stemmer.html#19" title="Go to source code"><var>$visitorProvider</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
