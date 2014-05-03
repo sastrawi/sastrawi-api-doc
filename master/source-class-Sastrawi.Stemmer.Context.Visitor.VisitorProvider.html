@@ -8,7 +8,7 @@
 	<title>File Sastrawi/Stemmer/Context/Visitor/VisitorProvider.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?709491018"></script>
-	<script type="text/javascript" src="elementlist.js?4158183784"></script>
+	<script type="text/javascript" src="elementlist.js?2315460335"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -264,24 +264,37 @@
 </span><span id="151" class="l"><a class="l" href="#151">151: </a>            )
 </span><span id="152" class="l"><a class="l" href="#152">152: </a>        );
 </span><span id="153" class="l"><a class="l" href="#153">153: </a>
-</span><span id="154" class="l"><a class="l" href="#154">154: </a>    }
-</span><span id="155" class="l"><a class="l" href="#155">155: </a>
-</span><span id="156" class="l"><a class="l" href="#156">156: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getVisitors" href="#_getVisitors">getVisitors</a>()
-</span><span id="157" class="l"><a class="l" href="#157">157: </a>    {
-</span><span id="158" class="l"><a class="l" href="#158">158: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;visitors;
-</span><span id="159" class="l"><a class="l" href="#159">159: </a>    }
+</span><span id="154" class="l"><a class="l" href="#154">154: </a>        <span class="php-var">$this</span>-&gt;prefixVisitors[] = <span class="php-keyword1">new</span> PrefixDisambiguator(
+</span><span id="155" class="l"><a class="l" href="#155">155: </a>            <span class="php-keyword1">array</span>(
+</span><span id="156" class="l"><a class="l" href="#156">156: </a>                <span class="php-keyword1">new</span> Disambiguator\DisambiguatorPrefixRule39a(),
+</span><span id="157" class="l"><a class="l" href="#157">157: </a>                <span class="php-keyword1">new</span> Disambiguator\DisambiguatorPrefixRule39b(),
+</span><span id="158" class="l"><a class="l" href="#158">158: </a>            )
+</span><span id="159" class="l"><a class="l" href="#159">159: </a>        );
 </span><span id="160" class="l"><a class="l" href="#160">160: </a>
-</span><span id="161" class="l"><a class="l" href="#161">161: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getSuffixVisitors" href="#_getSuffixVisitors">getSuffixVisitors</a>()
-</span><span id="162" class="l"><a class="l" href="#162">162: </a>    {
-</span><span id="163" class="l"><a class="l" href="#163">163: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;suffixVisitors;
-</span><span id="164" class="l"><a class="l" href="#164">164: </a>    }
-</span><span id="165" class="l"><a class="l" href="#165">165: </a>
-</span><span id="166" class="l"><a class="l" href="#166">166: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getPrefixVisitors" href="#_getPrefixVisitors">getPrefixVisitors</a>()
-</span><span id="167" class="l"><a class="l" href="#167">167: </a>    {
-</span><span id="168" class="l"><a class="l" href="#168">168: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;prefixVisitors;
-</span><span id="169" class="l"><a class="l" href="#169">169: </a>    }
-</span><span id="170" class="l"><a class="l" href="#170">170: </a>}
-</span><span id="171" class="l"><a class="l" href="#171">171: </a></span></code></pre>
+</span><span id="161" class="l"><a class="l" href="#161">161: </a>        <span class="php-var">$this</span>-&gt;prefixVisitors[] = <span class="php-keyword1">new</span> PrefixDisambiguator(
+</span><span id="162" class="l"><a class="l" href="#162">162: </a>            <span class="php-keyword1">array</span>(
+</span><span id="163" class="l"><a class="l" href="#163">163: </a>                <span class="php-keyword1">new</span> Disambiguator\DisambiguatorPrefixRule40a(),
+</span><span id="164" class="l"><a class="l" href="#164">164: </a>                <span class="php-keyword1">new</span> Disambiguator\DisambiguatorPrefixRule40b(),
+</span><span id="165" class="l"><a class="l" href="#165">165: </a>            )
+</span><span id="166" class="l"><a class="l" href="#166">166: </a>        );
+</span><span id="167" class="l"><a class="l" href="#167">167: </a>    }
+</span><span id="168" class="l"><a class="l" href="#168">168: </a>
+</span><span id="169" class="l"><a class="l" href="#169">169: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getVisitors" href="#_getVisitors">getVisitors</a>()
+</span><span id="170" class="l"><a class="l" href="#170">170: </a>    {
+</span><span id="171" class="l"><a class="l" href="#171">171: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;visitors;
+</span><span id="172" class="l"><a class="l" href="#172">172: </a>    }
+</span><span id="173" class="l"><a class="l" href="#173">173: </a>
+</span><span id="174" class="l"><a class="l" href="#174">174: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getSuffixVisitors" href="#_getSuffixVisitors">getSuffixVisitors</a>()
+</span><span id="175" class="l"><a class="l" href="#175">175: </a>    {
+</span><span id="176" class="l"><a class="l" href="#176">176: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;suffixVisitors;
+</span><span id="177" class="l"><a class="l" href="#177">177: </a>    }
+</span><span id="178" class="l"><a class="l" href="#178">178: </a>
+</span><span id="179" class="l"><a class="l" href="#179">179: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getPrefixVisitors" href="#_getPrefixVisitors">getPrefixVisitors</a>()
+</span><span id="180" class="l"><a class="l" href="#180">180: </a>    {
+</span><span id="181" class="l"><a class="l" href="#181">181: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;prefixVisitors;
+</span><span id="182" class="l"><a class="l" href="#182">182: </a>    }
+</span><span id="183" class="l"><a class="l" href="#183">183: </a>}
+</span><span id="184" class="l"><a class="l" href="#184">184: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
