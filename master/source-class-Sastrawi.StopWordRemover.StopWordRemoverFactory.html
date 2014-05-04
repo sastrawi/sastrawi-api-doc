@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File Sastrawi/StopWordRemover/StopWordRemoverFactory.php</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?908416324"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.html">Sastrawi<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Dictionary.html">Dictionary</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Morphology.html">Morphology<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Morphology.Disambiguator.html">Disambiguator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Specification.html">Specification</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.html">Stemmer<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.ConfixStripping.html">ConfixStripping</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.html">Context<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.Visitor.html">Visitor</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Stemmer.Filter.html">Filter</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Sastrawi.StopWordRemover.html">StopWordRemover</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sastrawi.StopWordRemover.StopWordRemover.html">StopWordRemover</a></li>
+				<li class="active"><a href="class-Sastrawi.StopWordRemover.StopWordRemoverFactory.html">StopWordRemoverFactory</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Sastrawi.StopWordRemover.html" title="Summary of Sastrawi\StopWordRemover"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-Sastrawi.StopWordRemover.StopWordRemoverFactory.html" title="Summary of Sastrawi\StopWordRemover\StopWordRemoverFactory"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a>
+</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> Sastrawi\StopWordRemover;
+</span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
+</span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-keyword1">use</span> Sastrawi\Dictionary\ArrayDictionary;
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-keyword1">class</span> <a id="StopWordRemoverFactory" href="#StopWordRemoverFactory">StopWordRemoverFactory</a>
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>{
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_createStopWordRemover" href="#_createStopWordRemover">createStopWordRemover</a>()
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>    {
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>        <span class="php-var">$stopWords</span> = <span class="php-var">$this</span>-&gt;getStopWords();
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>        <span class="php-var">$dictionary</span> = <span class="php-keyword1">new</span> ArrayDictionary(<span class="php-var">$stopWords</span>);
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>        <span class="php-var">$stopWordRemover</span> = <span class="php-keyword1">new</span> StopWordRemover(<span class="php-var">$dictionary</span>);
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>        <span class="php-keyword1">return</span> <span class="php-var">$stopWordRemover</span>;
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>    }
+</span><span id="18" class="l"><a class="l" href="#18">18: </a>
+</span><span id="19" class="l"><a class="l" href="#19">19: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getStopWords" href="#_getStopWords">getStopWords</a>()
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>    {
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>            <span class="php-quote">'yang'</span>, <span class="php-quote">'untuk'</span>, <span class="php-quote">'pada'</span>, <span class="php-quote">'ke'</span>, <span class="php-quote">'para'</span>, <span class="php-quote">'namun'</span>, <span class="php-quote">'menurut'</span>, <span class="php-quote">'antara'</span>, <span class="php-quote">'dia'</span>, <span class="php-quote">'dua'</span>,
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>            <span class="php-quote">'ia'</span>, <span class="php-quote">'seperti'</span>, <span class="php-quote">'jika'</span>, <span class="php-quote">'jika'</span>, <span class="php-quote">'sehingga'</span>, <span class="php-quote">'kembali'</span>, <span class="php-quote">'dan'</span>, <span class="php-quote">'tidak'</span>, <span class="php-quote">'ini'</span>, <span class="php-quote">'karena'</span>,
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>            <span class="php-quote">'kepada'</span>, <span class="php-quote">'oleh'</span>, <span class="php-quote">'saat'</span>, <span class="php-quote">'harus'</span>, <span class="php-quote">'sementara'</span>, <span class="php-quote">'setelah'</span>, <span class="php-quote">'belum'</span>, <span class="php-quote">'kami'</span>, <span class="php-quote">'sekitar'</span>,
+</span><span id="25" class="l"><a class="l" href="#25">25: </a>            <span class="php-quote">'bagi'</span>, <span class="php-quote">'serta'</span>, <span class="php-quote">'di'</span>, <span class="php-quote">'dari'</span>, <span class="php-quote">'telah'</span>, <span class="php-quote">'sebagai'</span>, <span class="php-quote">'masih'</span>, <span class="php-quote">'hal'</span>, <span class="php-quote">'ketika'</span>, <span class="php-quote">'adalah'</span>,
+</span><span id="26" class="l"><a class="l" href="#26">26: </a>            <span class="php-quote">'itu'</span>, <span class="php-quote">'dalam'</span>, <span class="php-quote">'bisa'</span>, <span class="php-quote">'bahwa'</span>, <span class="php-quote">'atau'</span>, <span class="php-quote">'hanya'</span>, <span class="php-quote">'kita'</span>, <span class="php-quote">'dengan'</span>, <span class="php-quote">'akan'</span>, <span class="php-quote">'juga'</span>,
+</span><span id="27" class="l"><a class="l" href="#27">27: </a>            <span class="php-quote">'ada'</span>, <span class="php-quote">'mereka'</span>, <span class="php-quote">'sudah'</span>, <span class="php-quote">'saya'</span>, <span class="php-quote">'terhadap'</span>, <span class="php-quote">'secara'</span>, <span class="php-quote">'agar'</span>, <span class="php-quote">'lain'</span>, <span class="php-quote">'anda'</span>,
+</span><span id="28" class="l"><a class="l" href="#28">28: </a>            <span class="php-quote">'begitu'</span>, <span class="php-quote">'mengapa'</span>, <span class="php-quote">'kenapa'</span>, <span class="php-quote">'yaitu'</span>, <span class="php-quote">'yakni'</span>, <span class="php-quote">'daripada'</span>, <span class="php-quote">'itulah'</span>, <span class="php-quote">'lagi'</span>, <span class="php-quote">'maka'</span>,
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>            <span class="php-quote">'tentang'</span>, <span class="php-quote">'demi'</span>, <span class="php-quote">'dimana'</span>, <span class="php-quote">'kemana'</span>, <span class="php-quote">'pula'</span>, <span class="php-quote">'sambil'</span>, <span class="php-quote">'sebelum'</span>, <span class="php-quote">'sesudah'</span>, <span class="php-quote">'supaya'</span>,
+</span><span id="30" class="l"><a class="l" href="#30">30: </a>            <span class="php-quote">'guna'</span>, <span class="php-quote">'kah'</span>, <span class="php-quote">'pun'</span>, <span class="php-quote">'sampai'</span>, <span class="php-quote">'sedangkan'</span>, <span class="php-quote">'selagi'</span>, <span class="php-quote">'sementara'</span>, <span class="php-quote">'tetapi'</span>, <span class="php-quote">'apakah'</span>,
+</span><span id="31" class="l"><a class="l" href="#31">31: </a>            <span class="php-quote">'kecuali'</span>, <span class="php-quote">'sebab'</span>, <span class="php-quote">'selain'</span>, <span class="php-quote">'seolah'</span>, <span class="php-quote">'seraya'</span>, <span class="php-quote">'seterusnya'</span>, <span class="php-quote">'tanpa'</span>, <span class="php-quote">'agak'</span>, <span class="php-quote">'boleh'</span>,
+</span><span id="32" class="l"><a class="l" href="#32">32: </a>            <span class="php-quote">'dapat'</span>, <span class="php-quote">'dsb'</span>, <span class="php-quote">'dst'</span>, <span class="php-quote">'dll'</span>, <span class="php-quote">'dahulu'</span>, <span class="php-quote">'dulunya'</span>, <span class="php-quote">'anu'</span>, <span class="php-quote">'demikian'</span>, <span class="php-quote">'tapi'</span>, <span class="php-quote">'ingin'</span>,
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>            <span class="php-quote">'juga'</span>, <span class="php-quote">'nggak'</span>, <span class="php-quote">'mari'</span>, <span class="php-quote">'nanti'</span>, <span class="php-quote">'melainkan'</span>, <span class="php-quote">'oh'</span>, <span class="php-quote">'ok'</span>, <span class="php-quote">'seharusnya'</span>, <span class="php-quote">'sebetulnya'</span>,
+</span><span id="34" class="l"><a class="l" href="#34">34: </a>            <span class="php-quote">'setiap'</span>, <span class="php-quote">'setidaknya'</span>, <span class="php-quote">'sesuatu'</span>, <span class="php-quote">'pasti'</span>, <span class="php-quote">'saja'</span>, <span class="php-quote">'toh'</span>, <span class="php-quote">'ya'</span>, <span class="php-quote">'walau'</span>, <span class="php-quote">'tolong'</span>,
+</span><span id="35" class="l"><a class="l" href="#35">35: </a>            <span class="php-quote">'tentu'</span>, <span class="php-quote">'amat'</span>, <span class="php-quote">'apalagi'</span>, <span class="php-quote">'bagaimanapun'</span>,
+</span><span id="36" class="l"><a class="l" href="#36">36: </a>        );
+</span><span id="37" class="l"><a class="l" href="#37">37: </a>    }
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>}
+</span><span id="39" class="l"><a class="l" href="#39">39: </a></span></code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

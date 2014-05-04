@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Class Sastrawi\Stemmer\StemmerFactory</title>
+	<title>Class Sastrawi\StopWordRemover\StopWordRemover</title>
 
 	<script type="text/javascript" src="resources/combined.js?709491018"></script>
 	<script type="text/javascript" src="elementlist.js?908416324"></script>
@@ -34,7 +34,7 @@
 							</ul></li>
 				<li><a href="namespace-Sastrawi.Specification.html">Specification</a>
 						</li>
-				<li class="active"><a href="namespace-Sastrawi.Stemmer.html">Stemmer<span></span></a>
+				<li><a href="namespace-Sastrawi.Stemmer.html">Stemmer<span></span></a>
 						<ul>
 				<li><a href="namespace-Sastrawi.Stemmer.ConfixStripping.html">ConfixStripping</a>
 						</li>
@@ -46,7 +46,7 @@
 				<li><a href="namespace-Sastrawi.Stemmer.Filter.html">Filter</a>
 						</li>
 							</ul></li>
-				<li><a href="namespace-Sastrawi.StopWordRemover.html">StopWordRemover</a>
+				<li class="active"><a href="namespace-Sastrawi.StopWordRemover.html">StopWordRemover</a>
 						</li>
 							</ul></li>
 			</ul>
@@ -58,14 +58,10 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Sastrawi.Stemmer.Stemmer.html">Stemmer</a></li>
-				<li class="active"><a href="class-Sastrawi.Stemmer.StemmerFactory.html">StemmerFactory</a></li>
+				<li class="active"><a href="class-Sastrawi.StopWordRemover.StopWordRemover.html">StopWordRemover</a></li>
+				<li><a href="class-Sastrawi.StopWordRemover.StopWordRemoverFactory.html">StopWordRemoverFactory</a></li>
 			</ul>
 
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-Sastrawi.Stemmer.StemmerInterface.html">StemmerInterface</a></li>
-			</ul>
 
 
 
@@ -91,7 +87,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Sastrawi.Stemmer.html" title="Summary of Sastrawi\Stemmer"><span>Namespace</span></a>
+				<a href="namespace-Sastrawi.StopWordRemover.html" title="Summary of Sastrawi\StopWordRemover"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -106,14 +102,9 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class StemmerFactory</h1>
+	<h1>Class StopWordRemover</h1>
 
 
-	<div class="description">
-	
-<p>Stemmer factory helps creating pre-configured stemmer</p>
-
-	</div>
 
 
 
@@ -126,28 +117,57 @@
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a><br />
+		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.StopWordRemover.html">StopWordRemover</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.StemmerFactory.html#13-58" title="Go to source code">Sastrawi/Stemmer/StemmerFactory.php</a><br />
+		<b>Located at</b> <a href="source-class-Sastrawi.StopWordRemover.StopWordRemover.html#7-45" title="Go to source code">Sastrawi/StopWordRemover/StopWordRemover.php</a><br />
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="createStemmer" id="_createStemmer">
+	<tr data-order="__construct" id="___construct">
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-Sastrawi.Stemmer.Stemmer.html">Sastrawi\Stemmer\Stemmer</a></code>
+			
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_createStemmer">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.StemmerFactory.html#20-30" title="Go to source code">createStemmer</a>( <span>mixed <var>$isDev</var> = <span class="php-keyword1">false</span></span> )</code>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sastrawi.StopWordRemover.StopWordRemover.html#14-17" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code> <var>$dictionary</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDictionary" id="_getDictionary">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDictionary">#</a>
+		<code><a href="source-class-Sastrawi.StopWordRemover.StopWordRemover.html#19-25" title="Go to source code">getDictionary</a>( )</code>
 
 		<div class="description short">
 			
@@ -160,7 +180,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-Sastrawi.Stemmer.Stemmer.html">Sastrawi\Stemmer\Stemmer</a></code></code><br />
+					<code><code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code></code><br />
 				</div>
 
 
@@ -169,57 +189,41 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getWords" id="_getWords">
+	<tr data-order="remove" id="_remove">
 
 		<td class="attributes"><code>
-			 protected 
-			
+			 public 
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getWords">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.StemmerFactory.html#32-47" title="Go to source code">getWords</a>( <span>mixed <var>$isDev</var> = <span class="php-keyword1">false</span></span> )</code>
+		<a class="anchor" href="#_remove">#</a>
+		<code><a href="source-class-Sastrawi.StopWordRemover.StopWordRemover.html#27-44" title="Go to source code">remove</a>( <span>string <var>$text</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Remove stop words.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Remove stop words.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code><br>$text The text which stop words to be removed</dd>
+				</dl></div>
 
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getWordsFromFile" id="_getWordsFromFile">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getWordsFromFile">#</a>
-		<code><a href="source-class-Sastrawi.Stemmer.StemmerFactory.html#49-57" title="Go to source code">getWordsFromFile</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The text after removal<br />
+				</div>
 
 
 
@@ -236,17 +240,24 @@
 
 
 
-	<table class="summary" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="APC_KEY" id="APC_KEY">
 
-		<td class="attributes"><code>string</code></td>
-		<td class="name"><code>
-				<a href="source-class-Sastrawi.Stemmer.StemmerFactory.html#18" title="Go to source code"><b>APC_KEY</b></a>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="dictionary" id="$dictionary">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Sastrawi.Dictionary.DictionaryInterface.html">Sastrawi\Dictionary\DictionaryInterface</a></code>
 		</code></td>
-		<td class="value"><code><span class="php-quote">'sastrawi_cache_dictionary'</span></code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.StopWordRemover.StopWordRemover.html#9-12" title="Go to source code"><var>$dictionary</var></a>
+		</td>
+		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#APC_KEY" class="anchor">#</a>
+			<a href="#$dictionary" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -259,10 +270,6 @@
 		</div></td>
 	</tr>
 	</table>
-
-
-
-
 
 
 
