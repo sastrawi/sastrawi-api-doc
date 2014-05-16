@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Sastrawi\Stemmer\CachedStemmer</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?519703942"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.html">Sastrawi<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Dictionary.html">Dictionary</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Morphology.html">Morphology<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Morphology.Disambiguator.html">Disambiguator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Specification.html">Specification</a>
+						</li>
+				<li class="active"><a href="namespace-Sastrawi.Stemmer.html">Stemmer<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.ConfixStripping.html">ConfixStripping</a>
+						</li>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.html">Context<span></span></a>
+						<ul>
+				<li><a href="namespace-Sastrawi.Stemmer.Context.Visitor.html">Visitor</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.Stemmer.Filter.html">Filter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Sastrawi.StopWordRemover.html">StopWordRemover</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Sastrawi.Stemmer.CachedStemmer.html">CachedStemmer</a></li>
+				<li><a href="class-Sastrawi.Stemmer.Stemmer.html">Stemmer</a></li>
+				<li><a href="class-Sastrawi.Stemmer.StemmerFactory.html">StemmerFactory</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Sastrawi.Stemmer.StemmerInterface.html">StemmerInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Sastrawi.Stemmer.html" title="Summary of Sastrawi\Stemmer"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class CachedStemmer</h1>
+
+
+	<div class="description">
+	
+<p>The stemmer interface</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Sastrawi\Stemmer\CachedStemmer</span></b>			
+			 implements 
+				<a href="class-Sastrawi.Stemmer.StemmerInterface.html"><span>Sastrawi\Stemmer\StemmerInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sastrawi.html">Sastrawi</a>\<a href="namespace-Sastrawi.Stemmer.html">Stemmer</a><br />
+		
+
+				<b>Author:</b>
+				Andy Librian &lt;<a
+href="mailto:andylibrian&#64;gmail.com">andylibrian&#64;<!---->gmail.com</a>&gt;<br />
+				<b>Since:</b>
+				0.4.0<br />
+		<b>Located at</b> <a href="source-class-Sastrawi.Stemmer.CachedStemmer.html#11-47" title="Go to source code">Sastrawi/Stemmer/CachedStemmer.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.CachedStemmer.html#17-21" title="Go to source code">__construct</a>( <span><code><a href="class-Sastrawi.Stemmer.Cache.CacheInterface.html">Sastrawi\Stemmer\Cache\CacheInterface</a></code> <var>$cache</var></span>, <span><code><a href="class-Sastrawi.Stemmer.StemmerInterface.html">Sastrawi\Stemmer\StemmerInterface</a></code> <var>$delegatedStemmer</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="stem" id="_stem">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_stem">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.CachedStemmer.html#23-41" title="Go to source code">stem</a>( <span>string <var>$text</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Stem a text to its common stem form</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stem a text to its common stem form</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code><br>$text the text string to stem, e.g : memberdayakan pembangunan</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>common stem form, e.g : daya bangun<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Sastrawi.Stemmer.StemmerInterface.html#_stem">Sastrawi\Stemmer\StemmerInterface::stem()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCache" id="_getCache">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCache">#</a>
+		<code><a href="source-class-Sastrawi.Stemmer.CachedStemmer.html#43-46" title="Go to source code">getCache</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="cache" id="$cache">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.CachedStemmer.html#13" title="Go to source code"><var>$cache</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cache" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="delegatedStemmer" id="$delegatedStemmer">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sastrawi.Stemmer.CachedStemmer.html#15" title="Go to source code"><var>$delegatedStemmer</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$delegatedStemmer" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
